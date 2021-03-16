@@ -8,7 +8,7 @@ import {
     CLEAR_FILTER
 } from '../types';
 
-export default (state, action) => {
+const ContactReducer = (state, action) => {
     switch(action.type) {
         case ADD_CONTACT:
             return {
@@ -20,7 +20,19 @@ export default (state, action) => {
             ...state,
             contacts: [...state.contacts.filter(contact => contact.id !== action.payload)]
         }
+        case SET_CURRENT:
+        return {
+            ...state,
+            current: action.payload
+        }
+        case CLEAR_CURRENT:
+        return {
+            ...state,
+            current: null
+        }
         default:
             return state;
     }
 };
+
+export default ContactReducer;
