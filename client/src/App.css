@@ -13,6 +13,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -439,4 +440,8 @@ table th {
     text-align: center;
     justify-content: center;
   }
+}
+
+.fas {
+  font-weight: 100;
 }

@@ -55,6 +55,10 @@ const Login = props => {
                 </div>
                 <input type="submit" value="Login" className="btn btn-primary btn-block"/>
             </form>
+            <div>
+                <h3>Here's a default login if you don't want to sign up.</h3>
+                <p className="text-center">Email: admin@contactkeeper.com <br></br>Password: admin123</p>
+            </div>
         </div>
     )
 }
